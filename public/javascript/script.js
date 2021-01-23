@@ -92,12 +92,12 @@ const slider = function () {
 
   // Key press:
 
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "ArrowLeft") prevSlide();
-    if (event.key === "ArrowRight") nextSlide();
-  });
+  //   document.addEventListener("keydown", function (event) {
+  //     if (event.key === "ArrowUp") prevSlide();
+  //     if (event.key === "ArrowDown") nextSlide();
+  //   });
 
-  // dot press:
+  // tab press:
 
   sliderTabContainer.addEventListener("click", function (event) {
     const clicked = event.target.closest(".slider-tab");

@@ -222,7 +222,7 @@ hr {
 }
 
 .slider {
-  height: 30rem;
+  height: 50rem;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -232,12 +232,33 @@ hr {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 30rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 50rem;
+  padding: 3rem;
   transition: transform 1s;
+}
+
+.slide h5 {
+  font-weight: 600;
+}
+
+.slide ul {
+  margin-top: 1rem;
+}
+
+.slide img {
+  width: 50%;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+
+.project-title-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.project-title {
+  flex-grow: 1;
 }
 
 /* Cards */
@@ -271,8 +292,6 @@ hr {
 .grey-container {
   background-color: rgba(220, 220, 220, 0.5);
   border-radius: 5px;
-  /* margin-top: 20px; */
-  padding: 10px;
 }
 
 .project-container,
