@@ -34,3 +34,78 @@ tabsContainer.addEventListener("click", function (event) {
     .querySelector(`.content-${clicked.dataset.tab}`)
     .classList.remove("content-hidden");
 });
+
+// ///////////////////////////////////////////////////////////////////////////////////////
+//  Slider:
+
+const slider = function () {
+  const slides = document.querySelectorAll(".slide");
+  const sliderTabContainer = document.querySelector(".slider-container");
+
+  let curSlide = 0;
+  const maxSlide = slides.length - 1;
+
+  // Functions:
+
+  const activateTab = function (slide) {
+    document
+      .querySelectorAll(".slider-tab")
+      .forEach((tab) => tab.classList.remove("slider-tab-active"));
+
+    document
+      .querySelector(`.slider-tab[data-slide="${slide}"]`)
+      .classList.add("slider-tab-active");
+  };
+
+  const goToSlide = function (targetSlide) {
+    slides.forEach(
+      (slide, i) =>
+        (slide.style.transform = `translatey(${(i - targetSlide) * 105}%)`)
+    );
+  };
+
+  const init = function () {
+    goToSlide(0);
+    activateTab(0);
+  };
+  init();
+
+  // Next SLide:
+
+  const nextSlide = function () {
+    if (curSlide === maxSlide) curSlide = 0;
+    else curSlide++;
+
+    goToSlide(curSlide);
+    activateTab(curSlide);
+  };
+
+  // prev slide:
+
+  const prevSlide = function () {
+    if (curSlide === 0) curSlide = maxSlide;
+    else curSlide--;
+
+    goToSlide(curSlide);
+    activateTab(curSlide);
+  };
+
+  // Key press:
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "ArrowLeft") prevSlide();
+    if (event.key === "ArrowRight") nextSlide();
+  });
+
+  // dot press:
+
+  sliderTabContainer.addEventListener("click", function (event) {
+    const clicked = event.target.closest(".slider-tab");
+    if (!clicked) return;
+
+    const { slide } = clicked.dataset;
+    goToSlide(slide);
+    activateTab(slide);
+  });
+};
+slider();
