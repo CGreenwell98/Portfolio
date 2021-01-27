@@ -22,6 +22,10 @@ h3 {
   font-weight: 700;
 }
 
+h4 {
+  margin-bottom: 1rem;
+}
+
 hr {
   width: 50%;
   border: 0;
@@ -133,7 +137,7 @@ hr {
 
 .tab-about-me {
   margin-right: 2.5rem;
-  transform: translateY(-60%);
+  transform: translateY(-50%);
   padding: 0.7rem 3rem;
 }
 
@@ -173,7 +177,7 @@ hr {
 }
 
 .tab-active {
-  transform: translateY(-80%);
+  transform: translateY(-70%);
 }
 
 .header {
@@ -222,7 +226,7 @@ hr {
 }
 
 .slider {
-  height: 50rem;
+  height: 65rem;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -232,8 +236,8 @@ hr {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 50rem;
-  padding: 3rem;
+  height: 65rem;
+  font-size: 0.95rem;
   transition: transform 1s;
 }
 
@@ -241,24 +245,78 @@ hr {
   font-weight: 600;
 }
 
-.slide ul {
-  margin-top: 1rem;
+.product-image {
+  width: 60%;
 }
 
 .slide img {
-  width: 50%;
+  width: 100%;
   border-radius: 5px;
-  flex-grow: 1;
+  transition: 0.3s;
+}
+
+.slide img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.slide span,
+b {
+  display: inline-block;
+  border: 3px solid #000;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.1rem 0.3rem;
+  margin: 0.2rem 0.3rem;
+}
+
+.slide span {
+  border-width: 2px;
+}
+
+.slide button {
+  position: absolute;
+  top: 20rem;
+}
+
+.languages {
+  padding-right: 1rem;
+  margin-top: 1rem;
+}
+
+.invisible {
+  opacity: 0;
+  transition: remove 1s;
+}
+
+.feature-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  margin-top: 1rem;
+}
+
+.feature-container {
+  background-color: #cccccc;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.features-section {
+  padding: 3rem;
 }
 
 .project-title-section {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
+  padding: 3rem;
 }
 
 .project-title {
-  flex-grow: 1;
+  width: 40%;
 }
 
 /* Cards */
@@ -304,5 +362,29 @@ hr {
   #contact-me,
   #about-me {
     height: auto;
+  }
+}
+
+/*  Spinner */
+
+.spinner:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #003365;
+  animation: spinner 0.7s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
   }
 }

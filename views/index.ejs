@@ -44,9 +44,9 @@
           <h5 class="header">Profile:</h5>
           <p>
             I am an aspiring full-stack developer who graduated from university
-            with a 1st class STEM degree. During my degree I was introduced to
-            programming, and due to enjoying it have subsequenly decided to
-            expand my coding ability by learning web development.
+            with a 1st class STEM degree. Since graduating I decided to persue
+            web development, learning both front and back end technologies
+            focused around javascript.
           </p>
           <p>
             I enjoy tackling tasks that involve logic and problem solving; I
@@ -68,7 +68,7 @@
             with MATLAB, using m-script to assemble meshes to analyze finite
             element problems associated with the movement of beams and bars
             under loading. After graduating university, I relised that I was
-            more interested in coding than in engineering, and therefore started
+            more interested in coding than in engineering and therefore started
             to learn about web development.
           </p>
         </div>
@@ -116,19 +116,23 @@
   <h2>Projects:</h2>
 
   <div class="row">
-    <div class="col-lg-10">
-      <div class="slider">
+    <div class="col-lg-10 spinner">
+      <div class="slider invisible">
         <div class="slide slide-1 grey-container">
           <div class="project-title-section">
             <div class="project-title">
               <h5 class="header">Portfolio</h5>
-              <ul>
-                <li>HTML5</li>
-                <li>CSS3: Bootstrap</li>
-                <li>Javascript: DOM manipulation</li>
-              </ul>
+              <p class="languages">
+                <b>HTML5</b><b>CSS3</b><b>Javascript ES6</b><span>DOM</span
+                ><span>Flex-box</span><span>CSS Grid</span>
+              </p>
+              <a href="https://github.com/CGreenwell98/Portfolio"
+                ><button class="btn btn-dark">Source Code</button></a
+              >
             </div>
-            <img src="images/Portfolio-fullscreen.png" alt="MintFarm.img" />
+            <a class="product-image"
+              ><img src="images/Portfolio-fullscreen.png" alt="Portfolio.img"
+            /></a>
           </div>
           <blockquote class="testimonial__text">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -139,28 +143,80 @@
             voluptatem saepe provident nihil molestiae.
           </blockquote>
         </div>
-        <div class="slide slide-2 grey-container">
-          <div class="project-title-section">
+
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        <div class="slide slide-2">
+          <div class="project-title-section grey-container">
             <div class="project-title">
               <h5 class="header">MintFarm</h5>
-              <ul>
-                <li>HTML5</li>
-                <li>CSS3: Bootstrap</li>
-                <li>Javascript: DOM manipulation, async API requests</li>
-                <li>Node.js: Express, EJS</li>
-                <li>MongoDB: RESTful API</li>
-              </ul>
+              <p class="languages">
+                <b>HTML5</b><b>CSS3</b><span>Bootstrap</span
+                ><b>Javascript ES6</b><span>DOM</span><span>Async API req.</span
+                ><b>Node.js</b><span>Express</span><span>EJS</span
+                ><span>Passport</span><b>Mongo DB</b><span>Mongoose</span
+                ><span>CRUD API</span>
+              </p>
+              <a href="https://github.com/CGreenwell98/MintFarm"
+                ><button class="btn btn-dark">View Code</button></a
+              >
             </div>
-            <img src="images/MintFarm-fullscreen.png" alt="MintFarm.img" />
+            <a class="product-image" href="https://mintfarm.herokuapp.com/"
+              ><img src="images/MintFarm-fullscreen.png" alt="MintFarm.img"
+            /></a>
           </div>
-          <blockquote class="testimonial__text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Accusantium quas quisquam non? Quas voluptate nulla minima deleniti
-            optio ullam nesciunt, numquam corporis et asperiores laboriosam
-            sunt, praesentium suscipit blanditiis. Necessitatibus id alias
-            reiciendis, perferendis facere pariatur dolore veniam autem esse non
-            voluptatem saepe provident nihil molestiae.
-          </blockquote>
+          <div class="features-section grey-container">
+            <h4>Features:</h4>
+            <p>
+              Mintfarm is a website made for a (fake) mint product wholesale
+              retailer situated in wembley. It includes several different web
+              pages with the following features:
+            </p>
+            <div class="feature-wrapper">
+              <div class="feature-container">
+                <p>
+                  A homepage with some general information, containing a google
+                  map that uses the google API to show the approximate location
+                  of the store.
+                </p>
+              </div>
+              <div class="feature-container">
+                <p>
+                  A product page with several items that are saved and retreived
+                  from a Mongo DB database. Items can be sorted by price or
+                  name.
+                </p>
+              </div>
+              <div class="feature-container">
+                <p>
+                  Dynamically loaded product pages for each item that use EJS to
+                  replace item information with data retrieved from the
+                  database.
+                </p>
+              </div>
+              <div class="feature-container">
+                <p>
+                  Sign in and register pages that use passport to authenticate
+                  users, additionally cookies were used via sessions to keep
+                  users signed in if they left the page.
+                </p>
+              </div>
+              <div class="feature-container">
+                <p>
+                  A basket saved in a database that contains all items and their
+                  quantities that a user has added. Can delete individual or all
+                  items via the account page.
+                </p>
+              </div>
+              <div class="feature-container">
+                <p>
+                  An account page that displays the user's account information,
+                  and displays a basket which is asynchronously loaded with the
+                  users basket items.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

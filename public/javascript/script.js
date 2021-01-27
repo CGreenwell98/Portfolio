@@ -109,3 +109,8 @@ const slider = function () {
   });
 };
 slider();
+
+setTimeout(function () {
+  document.querySelector(".spinner").classList.remove("spinner");
+  document.querySelector(".slider").classList.remove("invisible");
+}, 600);
