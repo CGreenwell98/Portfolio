@@ -2,6 +2,7 @@ const aboutMeSection = document.querySelector("#about-me");
 const projectSection = document.querySelector("#project-container");
 const arrowButton = document.querySelector(".arrow");
 const projectNavbarButton = document.querySelector(".project-btn");
+const sidebarProjectButton = document.querySelector(".sidebar-project-btn");
 
 const smoothScroll = function (btn, section) {
   btn.addEventListener("click", function () {
@@ -11,6 +12,7 @@ const smoothScroll = function (btn, section) {
 
 smoothScroll(arrowButton, aboutMeSection);
 smoothScroll(projectNavbarButton, projectSection);
+smoothScroll(sidebarProjectButton, projectSection);
 
 // Tabbed component:
 

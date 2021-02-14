@@ -49,8 +49,12 @@
             focused around javascript.
           </p>
           <p>
-            I enjoy tackling tasks that involve logic and problem solving; I
-            have built several airfix models, play chess
+            I enjoy tackling tasks that involve logic and problem solving;
+            Figuring out how to create automated and scalable scripts is what
+            intially drew me into coding, being able to reduce complex problems
+            into managable pieces then convert them into code is a key skill I
+            use regularly: Object oriented programming and using functions
+            enable me to effecitvely impliment this into my projects.
           </p>
         </div>
         <div class="content content-2 content-hidden">
@@ -67,7 +71,7 @@
             In my final year at university I chose a dissertation ascociated
             with MATLAB, using m-script to assemble meshes to analyze finite
             element problems associated with the movement of beams and bars
-            under loading. After graduating university, I relised that I was
+            under loading. After graduating university, I realised that I was
             more interested in coding than in engineering and therefore started
             to learn about web development.
           </p>
@@ -76,21 +80,28 @@
           <h5 class="header">Skills:</h5>
           <div class="skill-container">
             <div class="skill-box">
-              <h3>Languages:</h3>
+              <h4>Languages:</h4>
               <ul>
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>Javascript</li>
-                <li>node.js</li>
               </ul>
             </div>
             <div class="skill-box">
-              <h3>Tools:</h3>
+              <h4>Front-End:</h4>
               <ul>
                 <li>Bootstrap4</li>
                 <li>jQuery</li>
-                <li>express.js</li>
+                <li>Leaflet.js</li>
+              </ul>
+            </div>
+            <div class="skill-box">
+              <h4>Back-End:</h4>
+              <ul>
+                <li>Node.js</li>
+                <li>Express.js</li>
                 <li>EJS</li>
+                <li>MongoDB</li>
               </ul>
             </div>
           </div>
@@ -99,13 +110,35 @@
     </div>
 
     <div class="col-lg-3">
-      <div class="grey-container">
-        <a href="/projects"
-          ><button class="btn btn-dark" type="button" name="project-btn">
-            Projects
-          </button></a
-        >
-      </div>
+      <aside class="grey-container about-me-side-bar">
+        <h5>Schooling:</h5>
+        <ul>
+          <li>St Johns primary School</li>
+          <li>Bishop Ramsey CofE Secondary School</li>
+          <li>BEng at City, University of London</li>
+        </ul>
+        <h5>Contact Info:</h5>
+        <ul>
+          <li>mob: 07717678104</li>
+          <li>email: christopher.greenwell7 @gmail.com</li>
+        </ul>
+        <div>
+          <a
+            ><button
+              class="btn btn-dark sidebar-project-btn"
+              type="button"
+              name="project-btn"
+            >
+              Projects
+            </button></a
+          >
+          <a href="https://www.linkedin.com/in/christopher-greenwell-66054b205/"
+            ><button class="btn btn-dark" type="button" name="project-btn">
+              Linked-In
+            </button></a
+          >
+        </div>
+      </aside>
     </div>
   </div>
 </section>
@@ -118,35 +151,9 @@
   <div class="row">
     <div class="col-lg-10 spinner">
       <div class="slider invisible">
-        <div class="slide slide-1 grey-container">
-          <div class="project-title-section">
-            <div class="project-title">
-              <h5 class="header">Portfolio</h5>
-              <p class="languages">
-                <b>HTML5</b><b>CSS3</b><b>Javascript ES6</b><span>DOM</span
-                ><span>Flex-box</span><span>CSS Grid</span>
-              </p>
-              <a href="https://github.com/CGreenwell98/Portfolio"
-                ><button class="btn btn-dark">Source Code</button></a
-              >
-            </div>
-            <a class="product-image"
-              ><img src="images/Portfolio-fullscreen.png" alt="Portfolio.img"
-            /></a>
-          </div>
-          <blockquote class="testimonial__text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Accusantium quas quisquam non? Quas voluptate nulla minima deleniti
-            optio ullam nesciunt, numquam corporis et asperiores laboriosam
-            sunt, praesentium suscipit blanditiis. Necessitatibus id alias
-            reiciendis, perferendis facere pariatur dolore veniam autem esse non
-            voluptatem saepe provident nihil molestiae.
-          </blockquote>
-        </div>
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-        <div class="slide slide-2">
+        <div class="slide slide-1">
           <div class="project-title-section grey-container">
             <div class="project-title">
               <h5 class="header">MintFarm</h5>
@@ -218,28 +225,153 @@
             </div>
           </div>
         </div>
+
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        <div class="slide slide-2">
+          <div class="project-title-section grey-container">
+            <div class="project-title">
+              <h5 class="header">TrainSpota</h5>
+              <p class="languages">
+                <b>HTML5</b><b>CSS3</b><span>Responsive</span
+                ><span>Flexbox</span><span>CSS Grid</span><b>Javascript ES6</b
+                ><span>OOP</span><span>Modules</span><span>DOM</span
+                ><span>Async API req.</span><b>Node.js</b><span>Express</span
+                ><span>EJS</span>
+                <!-- <span>Passport</span><b>Mongo DB</b
+                ><span>Mongoose</span><span>CRUD API</span> -->
+              </p>
+              <a href="https://github.com/CGreenwell98/TrainSpota"
+                ><button class="btn btn-dark">View Code</button></a
+              >
+            </div>
+            <a class="product-image" href="https://trainspota.herokuapp.com/"
+              ><img src="images/TrainSpota-fullscreen.png" alt="TrainSpota.img"
+            /></a>
+          </div>
+          <div class="features-section grey-container">
+            <h4>Features:</h4>
+            <p>
+              TrainSpota is a website created for people that enjoy train
+              spotting and want to get up-to-date train data. Train information
+              is displayed in relation to a Leaflet.js map with the following
+              features:
+            </p>
+            <div class="feature-wrapper">
+              <div class="feature-container">
+                <p>
+                  A simple, reponsive UI that allows easy access to the search,
+                  geo-location, map-layer, and timetable features.
+                </p>
+              </div>
+              <div class="feature-container">
+                <p>
+                  User search queries that use transportAPI.com to get train
+                  data that can be displayed back to the user in a list or
+                  timetable (planned).
+                </p>
+              </div>
+              <div class="feature-container">
+                <p>
+                  Two base layers for OpenStreetMap or satelitte, and an
+                  OpenTrainMap overlay displaying current, planned and
+                  pre-existing train routes.
+                </p>
+              </div>
+              <div class="feature-container">
+                <p>
+                  A double-map-click that finds the nearest station within 500m
+                  and displays its train info for the next hour.
+                </p>
+              </div>
+              <div class="feature-container">
+                <p>
+                  PLANNED: Sign in and register function that use passport to
+                  authenticate users, additionally cookies were used via
+                  sessions to keep users signed in.
+                </p>
+              </div>
+              <div class="feature-container">
+                <p>
+                  PLANNED: Favourite stations that can be saved using MongoDB
+                  atlas that are linked to the users account.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        <div class="slide slide-3">
+          <div class="project-title-section grey-container">
+            <div class="project-title">
+              <h5 class="header">Portfolio</h5>
+              <p class="languages">
+                <b>HTML5</b><b>CSS3</b><b>Javascript ES6</b><span>DOM</span
+                ><span>Flex-box</span><span>CSS Grid</span>
+              </p>
+              <a href="https://github.com/CGreenwell98/Portfolio"
+                ><button class="btn btn-dark">Source Code</button></a
+              >
+            </div>
+            <a class="product-image"
+              ><img src="images/Portfolio-fullscreen.png" alt="Portfolio.img"
+            /></a>
+          </div>
+          <div class="features-section grey-container">
+            <h4>Features:</h4>
+            <p>
+              My prortfolio website is used to display other projects and
+              includes:
+            </p>
+            <div class="feature-wrapper">
+              <div class="feature-container">
+                <p>
+                  A tabbed component that uses DOM manipulation to change the
+                  visible tab.
+                </p>
+              </div>
+              <div class="feature-container">
+                <p>
+                  A second tabbed component that uses a slider to switch between
+                  projects.
+                </p>
+              </div>
+              <div class="feature-container">
+                <p>
+                  Smooth scrolling to sections when clicking on buttons in the
+                  navbar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Slider -->
+
     <div class="col-lg-2 slider-container">
       <div class="slider-bar">
         <button
           class="tab slider-tab-1 slider-tab slider-tab-active"
           data-slide="0"
         >
-          Portfolio
-        </button>
-        <button class="tab slider-tab-2 slider-tab" data-slide="1">
           MintFarm
         </button>
+        <button class="tab slider-tab-2 slider-tab" data-slide="1">
+          TrainSpota
+        </button>
         <button class="tab slider-tab-3 slider-tab" data-slide="2">
-          MiniGames
+          Portfolio
         </button>
       </div>
     </div>
   </div>
 </section>
 
-<div class="col-lg-4 col-md-6">
+<!-- <div class="col-lg-4 col-md-6">
   <div class="card">
     <a class="card-anchor" href="#">
       <img
@@ -263,6 +395,6 @@
       </div>
     </a>
   </div>
-</div>
+</div> -->
 
 <%- include("partials/footer") -%>

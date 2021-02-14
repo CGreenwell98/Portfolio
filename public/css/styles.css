@@ -57,8 +57,8 @@ hr {
 
 .skew-section-end {
   background-color: #003365;
-  margin: -4.5rem -9rem 0;
-  height: 9rem;
+  margin: -5rem -9rem 0;
+  height: 10rem;
   transform: skew(0, 5deg);
   position: relative;
   z-index: -1;
@@ -194,7 +194,22 @@ hr {
 .content {
   font-size: 1rem;
   padding: 3rem 7rem 0 7rem;
-  height: 26rem;
+  min-height: 26rem;
+}
+
+.about-me-side-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  min-height: 29rem;
+  padding: 3rem;
+}
+
+.about-me-side-bar button {
+  font-size: 0.9rem;
+  margin: 1rem 0.2rem 0;
 }
 
 /* Projects */
@@ -276,7 +291,7 @@ b {
 
 .slide button {
   position: absolute;
-  top: 20rem;
+  top: 30%;
 }
 
 .languages {
@@ -319,37 +334,11 @@ b {
   width: 40%;
 }
 
-/* Cards */
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  border: none;
-  color: white;
-  margin: 10px;
-}
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
-}
-
-.card-anchor,
-.card-anchor:hover {
-  color: initial;
-}
-
-.card-anchor:hover {
-  text-decoration: initial;
-}
-
-.text-muted i {
-  margin: 0 10px;
-}
-
-/*  */
+/* general */
 
 .grey-container {
   background-color: rgba(220, 220, 220, 0.5);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .project-container,
@@ -357,7 +346,7 @@ b {
   height: 45rem;
 }
 
-@media only screen & (maxwidth: 990px) {
+@media screen and (max-width: 1024px) {
   #project-container,
   #contact-me,
   #about-me {
