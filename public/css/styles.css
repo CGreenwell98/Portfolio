@@ -2,6 +2,14 @@ body {
   background-color: rgba(220, 220, 220, 0.1);
   padding: 0 9rem;
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1367px) {
+  body {
+    padding: 0 6rem;
+  }
 }
 
 h1 {
@@ -72,6 +80,19 @@ hr {
   height: 25rem;
   margin: 0 auto;
   margin-top: -5.5rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .title-picture {
+    height: 20rem;
+    margin-top: -3rem;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .title-picture {
+    display: none;
+  }
 }
 
 .navbar-container {
@@ -193,7 +214,7 @@ hr {
 
 .content {
   font-size: 1rem;
-  padding: 3rem 7rem 0 7rem;
+  padding: 3rem 7rem;
   min-height: 26rem;
 }
 
@@ -210,6 +231,19 @@ hr {
 .about-me-side-bar button {
   font-size: 0.9rem;
   margin: 1rem 0.2rem 0;
+}
+
+@media screen and (max-width: 1367px) {
+  .about-me-side-bar button {
+    margin: 1rem 0 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-me-side-bar {
+    margin-top: 3rem;
+    min-height: 20rem;
+  }
 }
 
 /* Projects */
@@ -234,14 +268,32 @@ hr {
 .slider-tab {
   transform: translatex(-50%) scale(0.8, 0.8);
   width: 9rem;
+  height: 3rem;
 }
 
 .slider-tab-active {
   transform: translatex(-50%);
 }
 
+@media screen and (max-width: 1024px) {
+  .slider-bar {
+    flex-direction: row;
+    left: 0;
+    width: 100%;
+    border: none;
+    height: 6rem;
+  }
+  .slider-tab {
+    transform: scale(0.8, 0.8);
+  }
+
+  .slider-tab-active {
+    transform: scale(1);
+  }
+}
+
 .slider {
-  height: 65rem;
+  min-height: 65rem;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -251,9 +303,19 @@ hr {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 65rem;
+  min-height: 65rem;
   font-size: 0.95rem;
   transition: transform 1s;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider,
+  .slide {
+    height: 75rem;
+  }
+  .project-title-section {
+    height: 27rem;
+  }
 }
 
 .slide h5 {
@@ -343,15 +405,7 @@ b {
 
 .project-container,
 #about-me {
-  height: 45rem;
-}
-
-@media screen and (max-width: 1024px) {
-  #project-container,
-  #contact-me,
-  #about-me {
-    height: auto;
-  }
+  min-height: 45rem;
 }
 
 /*  Spinner */
