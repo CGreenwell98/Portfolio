@@ -21,5 +21,5 @@ app.get("/CV", function (req, res) {
   res.download("./CV/Christopher_Greenwell_CV.pdf");
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
