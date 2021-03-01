@@ -233,13 +233,13 @@ hr {
   margin: 1rem 0.2rem 0;
 }
 
-@media screen and (max-width: 1367px) {
+/* @media screen and (max-width: 1367px) {
   .about-me-side-bar button {
     margin: 1rem 0 0;
   }
-}
+} */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1367px) {
   .about-me-side-bar {
     margin-top: 3rem;
     min-height: 20rem;
@@ -275,7 +275,7 @@ hr {
   transform: translatex(-50%);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1367px) {
   .slider-bar {
     flex-direction: row;
     left: 0;
